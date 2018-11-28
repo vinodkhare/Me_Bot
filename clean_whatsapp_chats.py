@@ -10,8 +10,8 @@ all_text = []
 your_sents = []
 other_sents = []
 
-YOUR_NAME = 'YOUR NAME HERE'
-OTHER_NAME = 'OTHER NAME HERE'
+YOUR_NAME = 'YOUR_NAME'
+OTHER_NAME = 'OTHER_NAME'
 
 prev_pr_to_sp = {}
 prev = None
@@ -19,6 +19,8 @@ for line in content[1:]:
 	if 'Missed Voice Call' in line:
 		continue
 	if 'image omitted' in line:
+		continue
+	if 'You created this group' in line:
 		continue
 	if ' %s: '%YOUR_NAME in line:
 		text = line.split(' %s: '%YOUR_NAME)[-1]
