@@ -1,6 +1,21 @@
 # Me_Bot
 A simple tool to make a bot that speaks like you, simply learning from your WhatsApp Chats.
 
+## Requirements
+
+* **TensorFlow**: to install TensorFlow, [conda-forge](https://conda-forge.org/) needs to be added to Anaconda as a channel. Start Anaconda prompt and add the channel using
+
+```cmd
+> conda config --add channels conda-forge
+> conda install tensorflow tensorflow-hub
+```
+
+* **[`sentencepiece`](https://github.com/google/sentencepiece)**: needs to be installed using `pip`.
+
+```cmd
+> pip install sentencepiece
+```
+
 Instructions:-
 
 1. From WhatsApp on your phone, go to any chat and export it by going into the settings. Move the txt file that you receive inside the Me_Bot folder.
